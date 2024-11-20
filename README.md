@@ -5,24 +5,24 @@ This repository contains an implementation of the **vector dot-product** algorit
 ---
 
 ## 📖 **Mathematical Expression**
-The dot product of two vectors **A** and **B** of length **n** is given by:
+The dot product of two vectors **A** and **B** of length **n** is given by :
 
 \[
 \mathbf{A} \cdot \mathbf{B} = \sum_{i=1}^n A_i \cdot B_i
 \]
 
-Where:
+Where :
 - \( A_i \) and \( B_i \) are the elements of the vectors at index \( i \).
 
 ---
 
 ## 🧩 **Implementation**
 
-Here is a basic Python implementation of the dot product:
+Here is a basic Python implementation of the dot product :
 
 ```python
-def dot_product(vector_a, vector_b):
-    if len(vector_a) != len(vector_b):
+def dot_product(vector_a, vector_b) :
+    if len(vector_a) != len(vector_b) :
         raise ValueError("Vectors must be of the same length.")
     return sum(a * b for a, b in zip(vector_a, vector_b))
 
@@ -30,4 +30,4 @@ def dot_product(vector_a, vector_b):
 vector_a = [1, 2, 3]
 vector_b = [4, 5, 6]
 result = dot_product(vector_a, vector_b)
-print("Dot Product:", result)  # Output: 32
+print("Dot Product:", result)  # Output : 32
